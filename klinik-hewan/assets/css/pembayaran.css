@@ -1,0 +1,453 @@
+/* =========================
+   BASE
+========================= */
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+    margin: 0;
+    padding: 0;
+    color: #0f172a;
+}
+
+.main-content {
+    padding: 20px;
+}
+
+/* =========================
+   TYPOGRAPHY
+========================= */
+
+.page-title {
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: #0f172a;
+}
+
+.page-header h1 {
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 6px;
+}
+
+.page-header p {
+    color: #64748b;
+    font-size: 14px;
+}
+
+/* =========================
+   LAYOUT HEADER
+========================= */
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+/* =========================
+   CARD SYSTEM (UNIFIED)
+========================= */
+
+.card,
+.content-card,
+.form-card,
+.detail-card {
+    background: rgba(255,255,255,.88);
+    backdrop-filter: blur(20px);
+    border-radius: 24px;
+    padding: 24px;
+    border: 1px solid rgba(255,255,255,.7);
+    box-shadow: 0 15px 35px rgba(15,23,42,.08);
+}
+
+/* =========================
+   TABLE SYSTEM (GLASS STYLE)
+========================= */
+
+.table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+}
+
+.table th {
+    background: linear-gradient(135deg, #4F46E5, #6366F1);
+    color: #fff;
+    padding: 14px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.table th:first-child {
+    border-radius: 14px 0 0 14px;
+}
+
+.table th:last-child {
+    border-radius: 0 14px 14px 0;
+}
+
+.table td {
+    background: #fff;
+    padding: 14px;
+    font-size: 14px;
+    color: #334155;
+}
+
+.table td:first-child {
+    border-radius: 14px 0 0 14px;
+}
+
+.table td:last-child {
+    border-radius: 0 14px 14px 0;
+}
+
+.table tbody tr {
+    transition: .2s;
+}
+
+.table tbody tr:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,.06);
+}
+
+/* =========================
+   BUTTON SYSTEM
+========================= */
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 18px;
+    border-radius: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: .2s;
+    font-size: 14px;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+/* Variants */
+
+.btn-success {
+    background: linear-gradient(135deg, #22c55e, #16a34a);
+    color: #fff;
+}
+
+.btn-danger {
+    background: linear-gradient(135deg, #ef4444, #dc2626);
+    color: #fff;
+}
+
+.btn-warning {
+    background: linear-gradient(135deg, #f59e0b, #d97706);
+    color: #fff;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #4f46e5, #6366f1);
+    color: #fff;
+}
+
+.btn-secondary {
+    background: #64748b;
+    color: #fff;
+}
+
+/* =========================
+   FORM SYSTEM
+========================= */
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 700;
+    color: #334155;
+}
+
+.form-control {
+    width: 100%;
+    height: 52px;
+    border-radius: 14px;
+    border: 1px solid #e2e8f0;
+    padding: 0 14px;
+    background: #f8fafc;
+    outline: none;
+    transition: .2s;
+}
+
+.form-control:focus {
+    background: #fff;
+    box-shadow: 0 0 0 4px rgba(79,70,229,.15);
+}
+
+.textarea {
+    height: 120px;
+    padding: 12px 14px;
+}
+
+/* =========================
+   MODAL SYSTEM
+========================= */
+
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background: rgba(15,23,42,.6);
+    backdrop-filter: blur(8px);
+    z-index: 9999;
+}
+
+.modal-overlay.show {
+    display: flex;
+}
+
+.modal-box {
+    background: #fff;
+    width: 90%;
+    max-width: 1000px;
+    max-height: 90vh;
+    overflow-y: auto;
+    border-radius: 24px;
+    padding: 24px;
+    position: relative;
+}
+
+.modal-close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    background: #f1f5f9;
+    font-size: 20px;
+}
+
+.modal-close:hover {
+    background: #ef4444;
+    color: #fff;
+}
+
+/* =========================
+   BADGE
+========================= */
+
+.badge-primary {
+    background: #dbeafe;
+    color: #1d4ed8;
+    padding: 6px 12px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+/* =========================
+   INVOICE CARD
+========================= */
+
+.invoice-card {
+    max-width: 850px;
+    margin: auto;
+}
+
+/* =========================
+   INVOICE TABLE CLEAN LOOK
+========================= */
+
+.invoice-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.invoice-table tr {
+    border-bottom: 1px solid #eef2f7;
+}
+
+.invoice-table td {
+    padding: 14px 10px;
+    font-size: 14px;
+    color: #334155;
+}
+
+.invoice-table td:first-child {
+    width: 180px;
+    font-weight: 700;
+    color: #64748b;
+}
+
+.invoice-table td:last-child {
+    font-weight: 500;
+}
+
+/* =========================
+   TOTAL ROW HIGHLIGHT
+========================= */
+
+.total-row {
+    background: #f8fafc;
+}
+
+.total-price {
+    font-size: 18px;
+    font-weight: 800;
+    color: #16a34a;
+}
+
+/* =========================
+   ACTION BUTTON AREA
+========================= */
+
+.invoice-action {
+    margin-top: 25px;
+    display: flex;
+    gap: 12px;
+}
+
+/* =========================
+   HOVER EFFECT
+========================= */
+
+.invoice-table tr:hover {
+    background: #f9fafb;
+}
+
+
+/* CONTAINER */
+.invoice-box {
+    max-width: 700px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* HEADER */
+h1 {
+    text-align: center;
+    font-size: 22px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+/* LINE */
+hr {
+    border: none;
+    border-top: 1px dashed #999;
+    margin: 15px 0;
+}
+
+/* TABLE */
+table {
+    width: 100%;
+    font-size: 14px;
+}
+
+td {
+    padding: 6px 0;
+    vertical-align: top;
+}
+
+/* LABEL */
+.label {
+    width: 120px;
+    color: #333;
+    font-weight: 600;
+}
+
+/* TOTAL */
+.total {
+    text-align: right;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 13px;
+    color: #555;
+}
+
+/* =========================
+   PRINT STYLE
+========================= */
+
+@media print {
+
+    body {
+        padding: 0;
+    }
+
+    .invoice-box {
+        box-shadow: none;
+        border: none;
+    }
+
+    button, a {
+        display: none;
+    }
+}
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:768px){
+
+    .invoice-action {
+        flex-direction: column;
+    }
+
+    .invoice-action .btn {
+        width: 100%;
+    }
+
+    .invoice-table td:first-child {
+        width: 120px;
+    }
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:768px){
+
+    .page-header{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .form-card,
+    .detail-card,
+    .content-card {
+        padding: 18px;
+    }
+
+    .table {
+        display: block;
+        overflow-x: auto;
+    }
+
+    .btn {
+        width: 100%;
+    }
+}

@@ -1,0 +1,441 @@
+
+body{
+
+    background:
+    linear-gradient(
+    135deg,
+    #F8FAFC,
+    #EEF2FF
+    );
+
+}
+
+/* HEADER */
+
+.page-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:25px;
+}
+
+.page-header h1{
+
+    font-size:34px;
+
+    font-weight:800;
+
+    color:#0F172A;
+}
+
+.page-header p{
+
+    color:#64748B;
+}
+
+/* CARD */
+
+.content-card{
+
+    background:
+    rgba(255,255,255,.75);
+
+    backdrop-filter:
+    blur(20px);
+
+    border-radius:28px;
+
+    padding:24px;
+
+    border:
+    1px solid rgba(255,255,255,.7);
+
+    box-shadow:
+    0 10px 30px rgba(15,23,42,.08);
+}
+
+/* SEARCH */
+
+.search-form{
+
+    display:flex;
+
+    gap:12px;
+}
+
+.form-control{
+
+    flex:1;
+
+    height:55px;
+
+    border:none;
+
+    outline:none;
+
+    border-radius:18px;
+
+    padding:0 18px;
+
+    background:white;
+
+    box-shadow:
+    0 5px 15px rgba(15,23,42,.05);
+}
+
+/* TABLE */
+
+.table{
+
+    width:100%;
+
+    border-collapse:separate;
+
+    border-spacing:0 12px;
+}
+
+.table th{
+
+    background:
+    linear-gradient(
+    135deg,
+    #4F46E5,
+    #6366F1
+    );
+
+    color:white;
+
+    padding:18px;
+
+    text-align:left;
+}
+
+.table td{
+
+    background:white;
+
+    padding:18px;
+
+    vertical-align:middle;
+}
+
+.table tr{
+
+    transition:.3s;
+}
+
+.table tr:hover{
+
+    transform:
+    translateY(-3px);
+}
+
+.medicine-name{
+
+    font-weight:700;
+
+    color:#0F172A;
+}
+
+.stock-number{
+
+    font-weight:700;
+
+    color:#4F46E5;
+}
+
+.price-tag{
+
+    font-weight:800;
+
+    color:#16A34A;
+}
+
+/* BADGES */
+
+.badge-success,
+.badge-warning,
+.badge-danger,
+.badge-dark{
+
+    padding:8px 14px;
+
+    border-radius:999px;
+
+    font-size:13px;
+
+    font-weight:700;
+}
+
+.badge-success{
+
+    background:#DCFCE7;
+    color:#15803D;
+}
+
+.badge-warning{
+
+    background:#FEF3C7;
+    color:#B45309;
+}
+
+.badge-danger{
+
+    background:#FEE2E2;
+    color:#B91C1C;
+}
+
+.badge-dark{
+
+    background:#E2E8F0;
+    color:#334155;
+}
+
+/* BUTTON */
+
+.btn{
+
+    border:none;
+
+    cursor:pointer;
+
+    text-decoration:none;
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:12px 18px;
+
+    border-radius:14px;
+
+    font-weight:700;
+
+    transition:.3s;
+}
+
+.btn:hover{
+
+    transform:
+    translateY(-3px);
+}
+
+.btn-primary{
+
+    background:
+    linear-gradient(
+    135deg,
+    #4F46E5,
+    #6366F1
+    );
+
+    color:white;
+}
+
+.btn-success{
+
+    background:
+    linear-gradient(
+    135deg,
+    #22C55E,
+    #16A34A
+    );
+
+    color:white;
+}
+
+.btn-warning{
+
+    background:
+    linear-gradient(
+    135deg,
+    #F59E0B,
+    #D97706
+    );
+
+    color:white;
+}
+
+.btn-danger{
+
+    background:
+    linear-gradient(
+    135deg,
+    #EF4444,
+    #DC2626
+    );
+
+    color:white;
+}
+
+.action-group{
+
+    display:flex;
+
+    gap:8px;
+}
+
+.modal-overlay{
+
+    position:fixed;
+    inset:0;
+
+    background:rgba(0,0,0,.5);
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+
+    opacity:0;
+    visibility:hidden;
+
+    transition:.3s;
+
+    z-index:9999;
+}
+
+.modal-overlay.show{
+
+    opacity:1;
+    visibility:visible;
+}
+
+.modal-container{
+
+    width:90%;
+    max-width:1000px;
+
+    background:white;
+
+    border-radius:24px;
+
+    padding:30px;
+
+    position:relative;
+}
+
+#closeAjaxModal{
+
+    position:absolute;
+
+    top:15px;
+    right:15px;
+}
+
+.form-card{
+
+    background:white;
+
+    border-radius:24px;
+
+    padding:30px;
+}
+
+.form-header{
+
+    margin-bottom:25px;
+}
+
+.form-header h2{
+
+    font-size:28px;
+
+    font-weight:800;
+
+    color:#0F172A;
+
+    margin-bottom:8px;
+}
+
+.form-header p{
+
+    color:#64748B;
+}
+
+.form-group{
+
+    margin-bottom:18px;
+}
+
+.form-group label{
+
+    display:block;
+
+    font-weight:700;
+
+    color:#334155;
+
+    margin-bottom:8px;
+}
+
+.form-control{
+
+    width:100%;
+
+    padding:14px 16px;
+
+    border:1px solid #E2E8F0;
+
+    border-radius:14px;
+
+    outline:none;
+
+    transition:.3s;
+}
+
+.form-control:focus{
+
+    border-color:#6366F1;
+
+    box-shadow:
+    0 0 0 4px rgba(99,102,241,.12);
+}
+
+.form-action{
+
+    display:flex;
+
+    gap:12px;
+
+    margin-top:25px;
+}
+
+.btn-secondary{
+
+    background:#64748B;
+
+    color:white;
+}
+
+.btn-secondary:hover{
+
+    background:#475569;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    .page-header{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:15px;
+    }
+
+    .search-form{
+
+        flex-direction:column;
+    }
+
+}
+

@@ -1,0 +1,200 @@
+/* =========================
+   GLOBAL
+========================= */
+
+body{
+
+    font-family:"Segoe UI",Arial,sans-serif;
+
+    background:#f5f7fa;
+
+    color:#2d3436;
+
+    padding:40px;
+
+    line-height:1.7;
+
+    font-size:15px;
+
+}
+
+/* =========================
+   CONTAINER
+========================= */
+
+.print-container{
+
+    max-width:900px;
+
+    margin:auto;
+
+    background:#fff;
+
+    padding:40px;
+
+    border-radius:12px;
+
+    box-shadow:
+    0 8px 25px rgba(0,0,0,.08);
+
+}
+
+/* =========================
+   TITLE
+========================= */
+
+h1{
+
+    text-align:center;
+
+    font-size:30px;
+
+    color:#1e3a8a;
+
+    margin-bottom:8px;
+
+}
+
+.subtitle{
+
+    text-align:center;
+
+    color:#777;
+
+    margin-bottom:25px;
+
+    font-size:14px;
+
+}
+
+/* =========================
+   HR
+========================= */
+
+hr{
+
+    border:none;
+
+    border-top:2px solid #dfe6e9;
+
+    margin:25px 0;
+
+}
+
+/* =========================
+   TABLE
+========================= */
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    margin-bottom:20px;
+
+}
+
+td{
+
+    padding:10px 12px;
+
+    vertical-align:top;
+
+    border-bottom:1px solid #ecf0f1;
+
+}
+
+td:first-child{
+
+    width:220px;
+
+    font-weight:600;
+
+    color:#34495e;
+
+}
+
+/* =========================
+   LIST
+========================= */
+
+ul{
+
+    margin:10px 0 0 20px;
+
+    padding:0;
+
+}
+
+ul li{
+
+    margin-bottom:8px;
+
+}
+
+/* =========================
+   SECTION TITLE
+========================= */
+
+.section-title{
+
+    background:#eef4ff;
+
+    color:#1e40af;
+
+    padding:10px 15px;
+
+    border-left:5px solid #2563eb;
+
+    border-radius:6px;
+
+    font-weight:bold;
+
+    margin:25px 0 15px;
+
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer{
+
+    margin-top:50px;
+
+    text-align:right;
+
+    color:#666;
+
+    font-size:14px;
+
+}
+
+/* =========================
+   PRINT
+========================= */
+
+@media print{
+
+    body{
+
+        background:#fff;
+
+        padding:0;
+
+    }
+
+    .print-container{
+
+        box-shadow:none;
+
+        border:none;
+
+        padding:0;
+
+        max-width:100%;
+
+    }
+
+}
