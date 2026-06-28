@@ -154,6 +154,7 @@ class="pet-form">
         <input
         type="number"
         step="0.01"
+        min ="0.00"
         name="berat"
         value="<?= $data['berat']; ?>"
         class="form-control">
@@ -175,6 +176,7 @@ class="pet-form">
         type="date"
         name="tanggal_lahir"
         value="<?= $data['tanggal_lahir']; ?>"
+        max="<?= date('Y-m-d'); ?>"
         class="form-control">
 </div>
 
