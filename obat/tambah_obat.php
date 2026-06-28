@@ -124,6 +124,7 @@ href="../assets/css/obat.css">
             <input
             type="number"
             name="stok"
+            min ="0"
             class="form-control"
             required>
 
@@ -136,6 +137,7 @@ href="../assets/css/obat.css">
             <input
             type="number"
             name="harga"
+            min ="0"
             class="form-control"
             required>
 
