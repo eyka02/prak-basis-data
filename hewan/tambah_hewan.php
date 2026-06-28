@@ -161,6 +161,7 @@ class="pet-form">
             <input
             type="date"
             name="tanggal_lahir"
+            max="<?= date('Y-m-d'); ?>"
             class="form-control">
         </div>
 
@@ -171,6 +172,7 @@ class="pet-form">
             type="number"
             step="0.01"
             name="berat"
+            min = 0.00
             class="form-control">
         </div>
 
