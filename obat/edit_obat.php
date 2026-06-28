@@ -120,6 +120,7 @@ if(isset($_POST['update']))
             <input
             type="number"
             name="stok"
+            min ="0"
             class="form-control"
             required
             value="<?= $data['stok']; ?>">
@@ -133,6 +134,7 @@ if(isset($_POST['update']))
             <input
             type="number"
             name="harga"
+            min ="0"
             class="form-control"
             required
             value="<?= $data['harga']; ?>">
